@@ -1,0 +1,200 @@
+!green_pale   = #cfc
+!green_light  = !green_pale - #333
+!green        = !green_light - #333
+!yellow_pale  = #ffc
+!yellow_light = !yellow_pale - #333
+!grey         = #666
+!grey_dark    = !grey - #333
+!grey_darkish = !grey - #111
+!grey_light   = !grey + #333
+!grey_lighter = !grey + #666
+!grey_pale    = !grey_light + #333
+!grey_paler   = #eeeeee
+
+!purple_bright = #ec6fec
+!purple = !purple_bright - #333
+!purple_pale = !purple_bright + #333
+!red_bright   = #ec6f6f
+!red = !red_bright - #333
+!red_dark = !red - #333
+!red_pale = !red_bright + #333
+!red_light = !red_bright + #333
+!red_pale     = !red_light + #333
+!green_bright = #6fec6f
+!green = !green_bright - #333
+!green_light = !green_bright + #333
+!green_pale = !green_light + #333
+!blue_bright  = #6febec
+!blue = !blue_bright - #333
+!blue_pale = !blue_bright 
+
+body
+  :font-size 12px
+  :background url(/images/watermark.png) no-repeat top right fixed
+  :font-family Georgia, Helvetica, Sans-serif
+.container
+  :color #333
+#body
+  ul
+    :margin-left 0
+    li
+      :list-style none
+      .created_at
+        :color = !grey_pale
+        :font-size 0.85em
+  a
+    :color = !grey_dark
+    &:hover
+      :color = !grey_light
+
+#header
+  :vertical-align middle
+  h1 
+    :font-family Georgia
+    :margin 0.25em 0 0 0.25em
+    :padding 0
+    :font-size 7.0em
+    :color = !red_dark
+    a
+      :text-decoration none
+      :color = !red_dark
+    span.current
+      :color = !green
+  h2
+    :margin 0 1.0em
+    :padding 0
+#content
+  :padding-top 2.0em
+  :border-top 1px solid
+  :border-color = !grey_paler
+textarea
+  :width 280px
+  :height 140px
+  :border 1px dotted
+  :border-color = !grey_pale
+  :margin 0
+  :padding 0.5em
+  :font-size 1.5em
+  :font-family Georgia, Sans-serif
+
+#footer
+  :font-size 1.5em
+  :color = !grey
+  :text-align right
+  :padding-top 1em
+
+.error
+  :border-color = !red_light
+  :background-color = !red_pale
+  :color = !grey_dark
+.notice
+  :border-color = !green_light
+  :background-color = !green_pale
+  :color = !grey_dark
+
+#subject, #predicate, #object
+  :margin-top 4.0em
+  input
+    :border-width 0
+    :border-bottom 1px solid
+    :border-color = !grey_pale
+    :font-family Georgia, Helvetica, Sans-serif
+    :width 100%
+    :padding 0
+    :margin 0
+    :font-size 2.0em
+    :text-align center
+    :background-color = !grey_paler
+  .label
+    :text-align center
+    :color = !grey_light
+#actions
+  :vertical-align middle
+  :font-size 2.0em
+  :padding 0 0.5em 0.25em 0
+  :text-align right
+  a
+    :color = !grey_dark
+
+#sentence
+  :text-align center
+  :font-size 2.0em
+  :border 1px solid 
+  :border-color = !grey_paler
+  :background-color = !grey_pale
+  :padding 0.5em
+
+.hidden-sentence
+  :display none
+
+#results
+  :line-height 1.5em
+  :text-align center
+  :font-size 1.5em
+  :padding-top 0.0em
+  :color = !grey
+  .triple
+    &:hover
+      :background-color = !yellow_pale
+h3
+  :text-align center
+  :font-size 2.5em
+  :margin-top 0.5em
+  :margin-bottom 0.5em
+  :color = !grey_dark
+h4
+  :font-size 1.5em
+#status
+  :text-align center
+  :color = !red
+  :font-size 2.0em
+#spacer
+  :height 2.0em
+  :margin-bottom 1.0em
+
+#top_left
+  div
+    :background-color = !grey_paler
+  :background-color = !grey_paler
+  :color = !grey_dark
+  .text
+    :padding 1.0em 2.0em 0.5em 2.0em
+  :text-align justify
+  :font-size 1.5em
+  #results
+    :position absolute
+    :width 470px
+    :border-style solid
+    :font-size 0.75em
+    :padding-bottom 1em
+    a
+      :color = !grey_dark
+    .triple
+      &:hover
+        :background-color = !grey_paler
+
+  #subject, #predicate, #object
+    .label
+      :font-size 1.0em
+      :color = !grey
+    :margin-top 0
+    :padding 0.5em
+    :padding-bottom 0em
+    :text-align center
+    input
+      :width 95%
+      :background-color = white
+      :border 1px solid
+      :border-color = !grey_pale
+      :font-size 1.0em
+      :color = !grey_dark
+
+ul.navigation
+  :margin-left 2em
+  li
+    :display inline
+    :list-style none
+    :font-size 1.5em
+    :padding-right 0.5em
+    a
+      :color = !grey_dark

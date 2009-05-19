@@ -1,0 +1,24 @@
+- content_for :top_left do
+  = render :partial => 'search', :locals => { :size => :small }
+.span-3
+  &nbsp;
+.span-21.last
+  #spacer
+    #status 
+    #sentence
+      = @triple.to_sentence
+
+.span-3
+  #location
+    %h3 Location
+    Berlin, Germany
+  #time
+    %h3 Time
+    %p 1961
+
+.span-9
+  #summary
+    - @triple.related_triples.each do |triple|
+      = triple.to_sentence
+
+.span-12.last

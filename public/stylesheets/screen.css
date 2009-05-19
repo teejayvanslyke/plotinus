@@ -1,0 +1,176 @@
+body {
+  font-size: 12px;
+  background: url(/images/watermark.png) no-repeat top right fixed;
+  font-family: Georgia, Helvetica, Sans-serif; }
+
+.container {
+  color: #333; }
+
+#body ul {
+  margin-left: 0; }
+  #body ul li {
+    list-style: none; }
+    #body ul li .created_at {
+      color: #cccccc;
+      font-size: 0.85em; }
+#body a {
+  color: #333333; }
+  #body a:hover {
+    color: #999999; }
+
+#header {
+  vertical-align: middle; }
+  #header h1 {
+    font-family: Georgia;
+    margin: 0.25em 0 0 0.25em;
+    padding: 0;
+    font-size: 7.0em;
+    color: #860909; }
+    #header h1 a {
+      text-decoration: none;
+      color: #860909; }
+    #header h1 span.current {
+      color: #3cb93c; }
+  #header h2 {
+    margin: 0 1.0em;
+    padding: 0; }
+
+#content {
+  padding-top: 2.0em;
+  border-top: 1px solid;
+  border-color: #eeeeee; }
+
+textarea {
+  width: 280px;
+  height: 140px;
+  border: 1px dotted;
+  border-color: #cccccc;
+  margin: 0;
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-family: Georgia, Sans-serif; }
+
+#footer {
+  font-size: 1.5em;
+  color: #666666;
+  text-align: right;
+  padding-top: 1em; }
+
+.error {
+  border-color: #ffa2a2;
+  background-color: #ffd5d5;
+  color: #333333; }
+
+.notice {
+  border-color: #a2ffa2;
+  background-color: #d5ffd5;
+  color: #333333; }
+
+#subject, #predicate, #object {
+  margin-top: 4.0em; }
+  #subject input,   #predicate input,   #object input {
+    border-width: 0;
+    border-bottom: 1px solid;
+    border-color: #cccccc;
+    font-family: Georgia, Helvetica, Sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 2.0em;
+    text-align: center;
+    background-color: #eeeeee; }
+  #subject .label,   #predicate .label,   #object .label {
+    text-align: center;
+    color: #999999; }
+
+#actions {
+  vertical-align: middle;
+  font-size: 2.0em;
+  padding: 0 0.5em 0.25em 0;
+  text-align: right; }
+  #actions a {
+    color: #333333; }
+
+#sentence {
+  text-align: center;
+  font-size: 2.0em;
+  border: 1px solid;
+  border-color: #eeeeee;
+  background-color: #cccccc;
+  padding: 0.5em; }
+
+.hidden-sentence {
+  display: none; }
+
+#results {
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0.0em;
+  color: #666666; }
+  #results .triple:hover {
+    background-color: #ffffcc; }
+
+h3 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #333333; }
+
+h4 {
+  font-size: 1.5em; }
+
+#status {
+  text-align: center;
+  color: #b93c3c;
+  font-size: 2.0em; }
+
+#spacer {
+  height: 2.0em;
+  margin-bottom: 1.0em; }
+
+#top_left {
+  background-color: #eeeeee;
+  color: #333333;
+  text-align: justify;
+  font-size: 1.5em; }
+  #top_left div {
+    background-color: #eeeeee; }
+  #top_left .text {
+    padding: 1.0em 2.0em 0.5em 2.0em; }
+  #top_left #results {
+    position: absolute;
+    width: 470px;
+    border-style: solid;
+    font-size: 0.75em;
+    padding-bottom: 1em; }
+    #top_left #results a {
+      color: #333333; }
+    #top_left #results .triple:hover {
+      background-color: #eeeeee; }
+  #top_left #subject, #top_left #predicate, #top_left #object {
+    margin-top: 0;
+    padding: 0.5em;
+    padding-bottom: 0em;
+    text-align: center; }
+    #top_left #subject .label,     #top_left #predicate .label,     #top_left #object .label {
+      font-size: 1.0em;
+      color: #666666; }
+    #top_left #subject input,     #top_left #predicate input,     #top_left #object input {
+      width: 95%;
+      background-color: #ffffff;
+      border: 1px solid;
+      border-color: #cccccc;
+      font-size: 1.0em;
+      color: #333333; }
+
+ul.navigation {
+  margin-left: 2em; }
+  ul.navigation li {
+    display: inline;
+    list-style: none;
+    font-size: 1.5em;
+    padding-right: 0.5em; }
+    ul.navigation li a {
+      color: #333333; }

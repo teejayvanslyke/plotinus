@@ -1,0 +1,33 @@
+- content_for :head do
+  = javascript_include_tag 'search'
+  = javascript_include_tag 'entities_show'
+  
+- content_for :top_left do
+  .span-12.last
+    %h3= @entity.name
+    .span-4
+      #subject
+        .label SUBJECT
+        = text_field :triple, :subject_name
+    .span-4
+      #predicate
+        .label PREDICATE
+        = text_field :triple, :predicate_name
+    .span-4.last
+      #object
+        .label OBJECT
+        = text_field :triple, :object_name
+  .span-12.last
+    #results
+
+
+.span-8
+  %h4 Location
+.span-8
+  %h4 Chronology
+.span-8.last
+  %h4 Text
+  - @entity.triples.each do |triple|
+    = triple.to_sentence
+
+

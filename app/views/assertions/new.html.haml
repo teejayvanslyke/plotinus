@@ -1,0 +1,15 @@
+%h1
+  New assertion
+- form_for(@assertion) do |f|
+  = f.error_messages
+  %p
+    = f.label :predicate_name
+    %br/
+    = f.text_field :predicate_name
+
+  - f.fields_for :parameters do |ff|
+    %p
+      = ff.text_field :entity_name
+  %p
+    = f.submit 'Create'
+= link_to 'Back', assertions_path

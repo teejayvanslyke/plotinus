@@ -1,0 +1,41 @@
+!!! Strict
+
+%html{html_attrs('us-EN')}
+  %head
+    %meta{'http-equiv'=>"content-type", :content=>"text/html; charset=UTF-8"}/
+    %title= "All The Facts - Alle Fakten"
+    %meta{:name => 'description', :content => ""}/
+    %meta{:name => 'keywords',    :content => ""}/
+
+    = javascript_include_tag :defaults
+    = javascript_include_tag 'typeface'
+    = javascript_include_tag 'helvetiker_font/helvetiker_regular.typeface'
+    = stylesheet_link_tag 'blueprint/screen', 'screen', :cache => 'all'
+    = javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? 
+    = yield :head
+    = javascript_tag do
+      $(function() {
+      = yield :javascript_ready
+      });
+
+
+  %body
+    #header
+      .container
+        .span-12
+          #top_left
+            = yield :top_left
+        .span-12.last
+          %h1.typeface-js
+            = link_to 'Plotinus', "/", :class => 'typeface-js'
+          %h2 The triplet search engine.
+
+          %ul.navigation
+            %li= link_to 'Log in', '#'
+            %li= link_to 'Register', '#'
+
+    .container
+      #content
+        #body.span-24.last
+          = yield
+

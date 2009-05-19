@@ -1,0 +1,23 @@
+- content_for :head do
+  = javascript_include_tag 'search'
+- content_for :top_left do
+  .text
+    %p 
+      Plotinus is an experiment whose hypothesis speculates that the corpus of
+      human knowledge is best understood and digested as a series of facts encoded
+      as subject-predicate-object triples.
+
+    %p
+      By reducing the granularity of examination to individual statements of 
+      fact, chronologies, atlases, and graphs emerge.  
+
+.span-24.last
+  #spacer
+    #status 
+    #sentence
+      Type a thing, a predicate, and a thing.  For instance, 'berlin is city' or 'pizza from italy'.
+      
+= render :partial => 'search', :locals => { :size => :large} 
+
+.span-24.last
+  #results

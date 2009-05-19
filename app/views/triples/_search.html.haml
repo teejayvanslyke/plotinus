@@ -1,0 +1,18 @@
+- if size == :small
+  - size = 3
+- else 
+  - size = 6
+
+.span-8
+  #subject
+    .label SUBJECT
+    = text_field :triple, :subject_name
+.span-8
+  #predicate
+    .label PREDICATE
+    = text_field :triple, :predicate_name
+.span-8.last
+  #object
+    .label OBJECT
+    = text_field :triple, :object_name
+

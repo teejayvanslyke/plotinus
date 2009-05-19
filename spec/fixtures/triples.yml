@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  entity1: MyString
+  entity2: MyString
+  predicate_id: 1
+  author_id: 1
+  domain_id: 1
+
+two:
+  entity1: MyString
+  entity2: MyString
+  predicate_id: 1
+  author_id: 1
+  domain_id: 1
