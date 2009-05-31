@@ -16,6 +16,10 @@ $(function() {
       'triple[object_name]':     object()
     }, callback, 'json');
   }
+
+  function allInputsFilled() {
+    return subject() != '' && object() != '' && predicate != '';
+  }
     
   function clearResults() 
   {
@@ -115,7 +119,7 @@ $(function() {
     searchTriples(function(json) {
       clearResults();
 
-      if (json.length == 0) {
+      if (json.length == 0 && allInputsFilled()) {
         $('#sentence').html("'"+sentence()+"' has not been entered.  ").
                        append(linkToAddNewTriple('Add it!'));
         return;

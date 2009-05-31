@@ -1,0 +1,43 @@
+Entity List - List of Philosophers
+- Plato
+- Aristotle
+- W.V.O. Quine
+
+select:       :subject
+subject:      :anything
+predicate:    is | are
+object:       philosopher
+
+
+Plot - French GDP 1900-2000
+- 1900 - 3.2b
+- 1901 - 3.4b
+...
+
+select        :object
+subject       includes(GDP of France | French GDP)
+predicate     is | was
+object        :currency
+
+Map - Events in Philosophy, Vienna Austria, 1950s
+- Show all events as map markers
+
+select        :triple
+location      Vienna, Austria
+triple        includes(philosophy)
+
+
+Query
+
+  - select    [ :subject, :object, :predicate, :triple ]
+  - conditions
+  - conjunctions [ :and, :or ]
+
+Condition
+
+  - modifier  [ :not ]
+  - field     [ :subject, :object, :predicate, :triple, :location, :time ]
+  - operator  [ :includes, :is, :near (location only), :around (time only), 
+                :greater_than, :less_than, :greater_than_or_equal_to, 
+                :less_than_or_equal_to ]
+

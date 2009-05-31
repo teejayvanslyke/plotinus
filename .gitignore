@@ -1,2 +1,4 @@
+db/sphinx
 log/*.log
+log/*.pid
 tmp/*
