@@ -2,7 +2,7 @@ set :application, "plotinus"
 set :domain,      "plotinus.net"
 set :user,        'deploy'
 set :rails_env,   'production'
-set :repository,  "git@github.com/teejayvanslyke/plotinus.git"
+set :repository,  "git@github.com:teejayvanslyke/plotinus.git"
 set :use_sudo,    false
 set :deploy_to,   "/var/www/#{application}"
 set :scm,         "git"
