@@ -11,8 +11,8 @@ production:
   adapter: mysql
   database: plotinus_production
   port: 3306
-  username: root
-  password: 
+  username: plotinus
+  password: plotinus
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
