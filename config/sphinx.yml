@@ -1,0 +1,4 @@
+production:
+  pid_file: /var/run/sphinx/searchd.pid
+  searchd_files: /var/www/plotinus/shared/db/sphinx
+
